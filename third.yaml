@@ -1,9 +1,10 @@
+---
 apiVersion: tekton.dev/v1beta1
 kind: PipelineRun
 metadata:
   generateName: yaml-linting-pipeline-
 spec:
-  pipelineRef
+  pipelineRef:
     name: yaml-linting-pipeline
   workspaces:
     - name: shared-workspace
